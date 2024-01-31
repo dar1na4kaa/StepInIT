@@ -1,0 +1,48 @@
+﻿<Window x:Class="StepInIT.RegStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StepInIT"
+        mc:Ignorable="d"
+        Title="RegStudentWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="25">Имя</TextBlock>
+        <TextBox Grid.Row="1"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="250" Margin="0,15"></TextBox>
+        <TextBlock Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="25">Фамилия</TextBlock>
+        <TextBox Grid.Row="2"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="250" Margin="0,15"></TextBox>
+        <TextBlock Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="25">Курс</TextBlock>
+        <ComboBox  Grid.Row="3"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="250" Margin="0,15">
+            <ComboBoxItem>
+                <TextBlock>1</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>2</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>3</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <TextBlock Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="25">Группа</TextBlock>
+        <ComboBox  Grid.Row="4"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="250" Margin="0,15">
+            <ComboBoxItem>
+                <TextBlock>ДИ25</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>КИ25</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>ДИ11</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Right"  Width="250" Height="35">Сохранить</Button>
+    </Grid>
+</Window>

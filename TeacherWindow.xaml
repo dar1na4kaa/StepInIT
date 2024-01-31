@@ -1,0 +1,22 @@
+﻿<Window x:Class="StepInIT.TeacherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StepInIT"
+        mc:Ignorable="d"
+        Title="TeacherWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button Margin="50,15" Height="35">Посмотреть дисциплины</Button>
+            <Button Margin="50,15" Height="35">Посмотреть отзывы</Button>
+            <Button Margin="50,150,50,30" Height="35">Сформировать отчет</Button>
+            <Button Margin="50,0" Height="35">Посмотреть список студентов</Button>
+        </StackPanel>
+        <TextBlock Grid.Column="1" Background="AliceBlue" Margin="10"></TextBlock>
+    </Grid>
+</Window>

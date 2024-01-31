@@ -1,0 +1,51 @@
+﻿<Window x:Class="StepInIT.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StepInIT"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="25">Студент</TextBlock>
+        <ComboBox  Grid.Row="1"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="250" Margin="0,15">
+            <ComboBoxItem>
+                <TextBlock>Стаценко Д.О</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>Соловьева Е.М</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>Хохлова А.Р</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>Шамрило А.Д</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <CheckBox Grid.Row="1"  VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="150" Margin="275,0,0,10">Не был на паре</CheckBox>
+        <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="25" Margin="355,0,0,0">Оценка</TextBlock>
+        <ComboBox  Grid.Row="2"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="250" Margin="0,86,0,0" Grid.RowSpan="2">
+            <ComboBoxItem>
+                <TextBlock>2</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>3</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>4</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>5</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Right"  Width="250" Height="35">Сохранить</Button>
+        <Button Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Left"  Width="250" Height="35">Вернуться к отчету</Button>
+    </Grid>
+</Window>

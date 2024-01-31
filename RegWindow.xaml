@@ -1,0 +1,36 @@
+﻿<Window x:Class="StepInIT.RegWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StepInIT"
+        mc:Ignorable="d"
+        Title="RegWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="25">Логин</TextBlock>
+        <TextBox Grid.Row="1"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="150" Margin="0,15"></TextBox>
+        <TextBlock Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="25">Пароль</TextBlock>
+        <TextBox Grid.Row="2"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="150" Margin="0,15"></TextBox>
+        <TextBlock Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="25">Роль</TextBlock>
+        <ComboBox  Grid.Row="3"  VerticalAlignment="Top" HorizontalAlignment="Center" Width="250" Margin="0,15">
+            <ComboBoxItem>
+                <TextBlock>Студент</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>Учиться</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>Менеджер</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Right"  Width="250" Height="35">Ввести личные данные</Button>
+    </Grid>
+</Window>
